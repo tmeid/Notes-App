@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+h1{
+    text-align: center;
+}
+.add-note{
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #e4e4e4;
+    padding: 10px;
+}
+form input,
+form label{
+    
+    display: block;
+}
+form input,
+form textarea{
+    width: 100%;
+    padding: 5px;
+}
+.btn{
+    display: block;
+    padding: 5px 10px;
+    background-color: #5e5e5e;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #fff;
+}
+.notes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.note{
+    width: 24%;
+    background-color: #d7e464;
+    padding: 10px;
+    position: relative;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.delete-btn{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 768px){
+    .note{
+        width: 32%;
+    }
+}
+@media screen and (max-width: 600px){
+    .note{
+        width: 49%;
+    }
+}
+@media screen and (max-width: 425px){
+    .note{
+        width: 100%;
+    }
+}
